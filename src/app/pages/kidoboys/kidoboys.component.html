@@ -1,0 +1,15 @@
+<div class="container mt-5 mb-5" >
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let item of styleData">
+            <div class="styleDetails mt-3 mb-3">
+                <img src="{{item.styleImg}}" width=100%/>
+                <h1 class="mt-3">{{item.styleName}}</h1>
+                <p>{{item.stylePrice | currency:'INR' }}</p>
+                <a class="buybtn"[routerLink]="['/menu',item.id]">BUY NOW &nbsp;<i class="bi bi-bag-heart"></i></a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

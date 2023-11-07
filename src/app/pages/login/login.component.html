@@ -1,0 +1,40 @@
+<div class="container">    
+    <div class="row">       
+      <div class ="col-md-6">
+        <div class="card">
+          <div class="text-center">
+                <h1>LOGIN</h1>
+          </div>
+            <form >
+                <div class="mb-3" >
+                   <label for="exampleInputEmail"class="form-label">USER EMAIL :</label>
+                   <input type="email"class="form-control"id="exampleInputEmail"aria-describedby="useremail" >  
+                </div>
+  
+                <div class="mb-3" >
+                  <label for="exampleInputPassword"class="form-label">USER PASSWORD :</label>
+                  <input type="password"class="form-control"id="exampleInputpassword" >
+                </div>
+  
+                <!-- <div class="mb-3"> -->
+                  <!-- <a class=" dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">USERTYPE</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="branch">ACCOUNTANT</a></li>
+              
+                      <li><a class="dropdown-item" routerLink="student">ADMIN</a></li>
+                    </ul> -->
+                  <!-- <ng-select 
+                    [(ngModel)]="selectedCar"
+                    [searchable]=true
+                    [clearable]=false
+                  >
+                    <ng-option class="dropdown-item" *ngFor="let car of cars" [value]="car.id">{{car.name}}</ng-option>
+                  </ng-select>
+                </div> -->
+               <button type="submit" class="btn btn-primary">LOGIN</button><br>
+            </form>
+            <a style="color: whitesmoke;margin-top: 10px;"routerLink="/signup">NEW USER</a><br>
+        </div>
+    </div>
+  </div>
+  

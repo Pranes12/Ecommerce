@@ -1,0 +1,20 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-lg-6" *ngIf="styleData">
+            <img src="styleData[0].styleImg" width="100%"/>
+            <h1 class="mt-2">{{styleData[0].styleName}}</h1>
+            <p>{{styleData[0].stylePrice | currency:'INR'}}</p>
+        </div>
+        <div class="col-lg-6">
+            <h1>ORDER SUMMARY</h1>
+            <form>
+                <input type="text" class="form-control"placeholder="Order Value"/><br>
+                <input type="text" class="form-control"placeholder="Discount"/><br>
+                <input type="text" class="form-control"placeholder="Grand Total"/>
+                <button class="btn btn-md- btn-dark mt-3">Place Order</button>
+            </form>
+
+        </div>
+    </div>
+
+</div>

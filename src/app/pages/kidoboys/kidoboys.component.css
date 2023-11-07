@@ -1,0 +1,28 @@
+
+.styleDetails
+{
+    padding:10px 5px;
+}
+.styleDetails img
+{
+    width:100%;
+    height:350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.styleDetails h1
+{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.buybtn
+{
+    background-color: mediumblue;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}

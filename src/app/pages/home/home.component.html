@@ -1,0 +1,45 @@
+<div class="banner">
+    <div class="banner content">
+        <h1 class="mb-5">Comfort is our priority</h1>
+        <a routerLink="menu">SHOP NOW<i class="bi bi-bag-heart"></i></a>
+    </div>  
+</div>
+<div class="container mt-5 mb-5">
+    <h1>CHOOSE YOUR <span class="highlight">FASHION</span></h1>
+    <div class="row mt-5">
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">   
+                <h1>1</h1>
+                <p>SUMMER COLLECTION</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>2</h1>
+                <p>FEEDBACKS</p>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>3</h1>
+                <p>ORDER DETAILS</p>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<!--Styledetails-->
+<div class="container mt-4 mb-4">
+    <h1>TRENDING MOVES</h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3 " *ngFor="let item of styleData">
+            <div class="styleDetails">
+                <img src="{{item.styleImg}}" style=" border: 5px whitesmoke">
+
+                <h1>{{item.styleName}}</h1>
+                <p>{{item.stylePrice | currency:'INR' }}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="menu" class="loadmore">LOAD MORE...</a>
+</div>
